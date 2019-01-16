@@ -10,7 +10,7 @@ export function toRna(dna) {
         else if (dna[i] == 'T')
             rna += 'A';
         else
-            rna += '';
+            throw 'Invalid input DNA.'
     }
     return rna
 }
