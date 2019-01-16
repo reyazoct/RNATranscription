@@ -1,11 +1,16 @@
 export function toRna(dna) {
-    if (dna == 'C')
-        return 'G'
-    if (dna == 'G')
-        return 'C'
-    if (dna == 'A')
-        return 'U'
-    if (dna == 'T')
-        return 'A'
-    return '';
+    var rna = '';
+    for (var i = 0; i < dna.length; i++) {
+        if (dna[i] == 'C')
+            rna += 'G';
+        else if (dna[i] == 'G')
+            rna += 'C';
+        else if (dna[i] == 'A')
+            rna += 'U';
+        else if (dna[i] == 'T')
+            rna += 'A';
+        else
+            rna += '';
+    }
+    return rna
 }
